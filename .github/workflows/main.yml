@@ -3,7 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  
+      - main
+
+# The repo's default GITHUB_TOKEN permission is read-only, so the deploy job
+# must explicitly request write access to push the built site to gh-pages.
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -11,12 +16,12 @@ jobs:
 
     steps:
     - name: Checkout the repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: '22'  
+        node-version: '22'
 
     - name: Install dependencies
       run: yarn install
@@ -25,7 +30,7 @@ jobs:
       run: yarn build
 
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist   
+        publish_dir: ./dist
