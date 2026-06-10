@@ -1,0 +1,12 @@
+name: Action Pinning Check
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  pinact:
+    uses: karida-org/.github/.github/workflows/reusable-pinact-check.yml@1c127977a1764bbe54fafa214b63cd19fbfccd67 # v1.2.0
