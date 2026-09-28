@@ -199,10 +199,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/serviceworker@^0.0.201":
-  version "0.0.201"
-  resolved "https://registry.yarnpkg.com/@types/serviceworker/-/serviceworker-0.0.201.tgz#f9779b719738704fe2e35313b55f60e0826ab105"
-  integrity sha512-FIYb79ylfiHjZMLAPDQGe1rbY3uLQTYJx67Yi4SZZjaSoie1zEwnuciKYKtRfeXfPfx55C049K9ncAqu/osxpQ==
+"@types/serviceworker@^0.0.202":
+  version "0.0.202"
+  resolved "https://registry.yarnpkg.com/@types/serviceworker/-/serviceworker-0.0.202.tgz#cd3eab85a2cb61672b73b1dc07d1862f6e7d83b3"
+  integrity sha512-UcPefnaRXkmc0TP6TORm+4cKi2nX3WIfpTx2kryFWfS0d243bu9xVYTpsG4n6BAHzkivxoqHmTvgVYw3RH+zeg==
 
 "@typescript/typescript-aix-ppc64@7.0.2":
   version "7.0.2"
