@@ -18,7 +18,7 @@
     "@meshtastic/js": "^2.3.7-5",
     "base64-js": "^1.5.1",
     "qrcode": "^1.5.4",
-    "sass": "^1.106.1"
+    "sass": "^1.107.1"
   },
   "scripts": {
     "dev": "vite",
